@@ -1,2 +1,19 @@
-# streamlit-tutorial
-🫐 Streamlit Tutorial
+# Streamlit Tutorial
+
+> 이 레포지토리는 2024년 1학기 데이터 사이언스 수업의 수강생을 대상으로 진행한 Streamlit 튜토리얼에 대한 내용을 담고 있습니다.
+
+## 실행방법
+
+### Python과 VSC 설치
+
+Python이 컴퓨터에 설치되어 있어야 하고, 코드 에디터인 VSC를 다운로드 받습니다.
+
+```
+
+```
+
+### 폴더에 마크다운 파일 생성
+
+Streamlit 프로젝트의 소스코드를 담을 폴더를 선택합니다. 폴더 선택 후에 마크다운 파일을 생성합니다.
+
+### 하하하
