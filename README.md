@@ -1,16 +1,13 @@
 # Streamlit Tutorial
 
-> 이 레포지토리는 2024년 1학기 데이터 사이언스 수업의 수강생을 대상으로 진행한 Streamlit 튜토리얼에 대한 내용을 담고 있습니다.
+> This repository contains materials for a Streamlit tutorial in Data Science (2024-1). The tutorial aims to provide hands-on experience and guidance in utilizing Streamlit for data science projects and applications.
 
-## 실행방법
+## 프로젝트 환경 세팅
 
 ### Python과 VSC 설치
 
-Python이 컴퓨터에 설치되어 있어야 하고, 코드 에디터인 VSC를 다운로드 받습니다.
-
-```
-
-```
+- Python이 컴퓨터에 설치되어 있어야 합니다. 파이썬의 버전은 3.8 이상을 권장합니다.
+- 코드 에디터인 Visual Studio Code를 다운로드 받습니다. [이 링크](https://code.visualstudio.com/download)를 클릭하면, VSC를 다운로드 받을 수 있습니다.
 
 ### 폴더에 마크다운 파일 생성
 
