@@ -2,11 +2,13 @@ import time
 import pandas as pd
 import streamlit as st
 
+
 def main():
     # title: https://docs.streamlit.io/develop/api-reference/text/st.title
     st.title(":sunglasses: Streamlit Tutorial")
     text_elements()
     data_analysis()
+
 
 def text_elements():
 
@@ -50,7 +52,7 @@ def data_analysis():
     description = """
     파이썬으로 간단한 데이터 분석을 수행한 후 이 결과를 Streamlit으로 시각화할 수 있습니다. 
     - 데이터 분석 과제: 공공데이터포털의 전국도서관표준데이터를 활용해 (1) 도서관의 자료수(도서)를 기준으로 상위 5개의 도서관 목록을 추출하고, (2) 시도별 도서관의 소장자료수(도서)를 분석합니다.
-    - 공공데이터포털의 전국도서관표준데이터는 [이 링크](https://www.data.go.kr/data/15013109/standard.do)에서 다운로드 받을 수 있습니다.
+    - 공공데이터포털의 전국도서관표준데이터는 [이 링크](https://www.data.go.kr/data/15013109/standard.do)에서 다운로드 받을 수 있습니다. 이 데이터는 `data` 폴더에 저장되어 있으니 별도로 다운로드 받지 않아도 됩니다.
     
     #### EDA (Exploratory Data Analysis)
     Streamlit은 파이썬의 Pandas로 불러온 데이터프레임을 그대로 사용할 수 있습니다. 다음의 `st.dataframe()` 함수를 사용하면, 데이터프레임으로 불러온 
@@ -76,9 +78,9 @@ def data_analysis():
     """
     st.markdown(description)
 
-    df.at[3169, '자료수(도서)'] = 47698
-    df['자료수(도서)'] = df['자료수(도서)'].astype(int)
-    
+    df.at[3169, "자료수(도서)"] = 47698
+    df["자료수(도서)"] = df["자료수(도서)"].astype(int)
+
     code = """
     df.at[3169, '자료수(도서)'] = 47698
     df['자료수(도서)'] = df['자료수(도서)'].astype(int)
@@ -109,7 +111,7 @@ def data_analysis():
         [80, 20, 80, 35, 40, 100],
         [10, 20, 80, 80, 70, 0],
         [10, 100, 20, 100, 30, 100],
-        [12, 24, 35, 46, 24, 35]
+        [12, 24, 35, 46, 24, 35],
     ]
     top_df["월별 이용자수"] = users_data
 
@@ -124,13 +126,15 @@ def data_analysis():
                 step=1,
                 format="%d ⭐",
             ),
-            "선택": st.column_config.CheckboxColumn("선택", help="선택 여부를 체크하세요."),
+            "선택": st.column_config.CheckboxColumn(
+                "선택", help="선택 여부를 체크하세요."
+            ),
             "월별 이용자수": st.column_config.BarChartColumn(
                 "월별 이용자수(최근 6개월)",
                 help="최근 6개월 동안의 월별 이용자수입니다.",
                 y_min=0,
                 y_max=100,
-            )
+            ),
         },
         hide_index=True,
     )
@@ -161,14 +165,14 @@ def data_analysis():
 
     """
     st.markdown(description)
-    
+
     # download_button: https://docs.streamlit.io/develop/api-reference/widgets/st.download_button
     download_data = chart_data.to_csv(index=False).encode("utf-8")
     st.download_button(
         label="CSV 다운로드",
         data=download_data,
-        file_name='시도별 소장자료 분석 데이터.csv',
-        mime='text/csv',
+        file_name="시도별 소장자료 분석 데이터.csv",
+        mime="text/csv",
     )
 
 
