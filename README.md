@@ -1,7 +1,5 @@
 # Streamlit Tutorial
 
-> This repository contains materials for a Streamlit tutorial in Data Science (2024-1). The tutorial aims to provide hands-on experience and guidance in utilizing Streamlit for data science projects and applications.
-
 ## 프로젝트 환경 세팅
 
 ### Python과 VSC 설치
