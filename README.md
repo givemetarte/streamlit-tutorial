@@ -120,8 +120,10 @@ env\Scripts\activate.bat  # window
 pip install -r requirements.txt
 
 # 4. deactivate bubble
-deactivate
+# deactivate
 ```
+
+streamlit 실행은 가상환경에 들어와있는 상태로 진행해야 합니다. 위의 코드에서 3번까지 진행하고, Streamlit을 실행하면 됩니다. 4번의 코드는 가상환경을 나갈 때 사용합니다.
 
 ### Streamlit 실행하기
 
@@ -129,4 +131,11 @@ deactivate
 
 ```py
 streamlit run main.py
+```
+
+새로운 파일을 Streamlit으로 열고 싶다면, 기존에 실행하고 있던 streamlit을 중단하고(ctrl + c) 같은 경로에서 다음을 입력합니다.
+
+```py
+# 새로운 파일 이름이 test.py인 경우
+streamlit run test.py
 ```
