@@ -1,5 +1,10 @@
-python-dotenv==1.0.0
-streamlit==1.31.0
-protobuf==3.20
-pandas==2.2.2
-numpy==1.26.4
+# python-dotenv==1.0.0
+# streamlit==1.31.0
+# protobuf==3.20
+# pandas==2.2.2
+# numpy==1.26.4
+python-dotenv
+streamlit
+protobuf
+pandas
+numpy
