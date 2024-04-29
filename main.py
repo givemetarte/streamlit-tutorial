@@ -8,6 +8,7 @@ def main():
     st.title(":sunglasses: Streamlit Tutorial")
     text_elements()
     data_analysis()
+    reference()
 
 
 def text_elements():
@@ -174,6 +175,22 @@ def data_analysis():
         file_name="시도별 소장자료 분석 데이터.csv",
         mime="text/csv",
     )
+
+    st.divider()
+
+
+def reference():
+    st.subheader("참고 자료")
+
+    description = """
+    앞서 설명한 여러 기능 외에도 Streamlit은 다양한 기능을 제공합니다. 다른 기능은 [이 문서](https://docs.streamlit.io/develop/api-reference)에서 확인할 수 있습니다. 
+
+    - [웹 문서의 레이아웃 설정하기](https://docs.streamlit.io/develop/api-reference/layout/)
+    - [외부 데이터베이스와 연결하기](https://docs.streamlit.io/develop/api-reference/connections)
+    - [LLM으로 챗봇 만들기](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)
+
+    """
+    st.markdown(description)
 
 
 if __name__ == "__main__":
